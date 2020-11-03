@@ -14,5 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('coming-soon');
+});
+
+// Redirect for a while
+Route::get('coming-soon', function () {
+    return view('/pages/coming-soon');
 });
